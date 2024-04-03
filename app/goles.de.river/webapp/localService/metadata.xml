@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml">
+        <edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="GolesDeRiver" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="Goles" EntityType="GolesDeRiver.Goles">
+                    <NavigationPropertyBinding Path="autor" Target="Jugadores"/>
+                    <NavigationPropertyBinding Path="partido" Target="Partidos"/>
+                    <NavigationPropertyBinding Path="forma" Target="Formas"/>
+                    <NavigationPropertyBinding Path="asistente" Target="Jugadores"/>
+                </EntitySet>
+                <EntitySet Name="Partidos" EntityType="GolesDeRiver.Partidos">
+                    <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
+                    <NavigationPropertyBinding Path="condicion" Target="Condiciones"/>
+                    <NavigationPropertyBinding Path="competencia" Target="Competencias"/>
+                    <NavigationPropertyBinding Path="dt" Target="Directores"/>
+                    <NavigationPropertyBinding Path="goles" Target="Goles"/>
+                </EntitySet>
+                <EntitySet Name="Jugadores" EntityType="GolesDeRiver.Jugadores">
+                    <NavigationPropertyBinding Path="goles" Target="Goles"/>
+                    <NavigationPropertyBinding Path="asistencias" Target="Goles"/>
+                </EntitySet>
+                <EntitySet Name="Directores" EntityType="GolesDeRiver.Directores">
+                    <NavigationPropertyBinding Path="goles" Target="Partidos"/>
+                </EntitySet>
+                <EntitySet Name="Equipos" EntityType="GolesDeRiver.Equipos">
+                    <NavigationPropertyBinding Path="partidos" Target="Partidos"/>
+                </EntitySet>
+                <EntitySet Name="Formas" EntityType="GolesDeRiver.Formas">
+                    <NavigationPropertyBinding Path="goles" Target="Goles"/>
+                </EntitySet>
+                <EntitySet Name="Competencias" EntityType="GolesDeRiver.Competencias">
+                    <NavigationPropertyBinding Path="partidos" Target="Partidos"/>
+                </EntitySet>
+                <EntitySet Name="Condiciones" EntityType="GolesDeRiver.Condiciones">
+                    <NavigationPropertyBinding Path="partidos" Target="Partidos"/>
+                </EntitySet>
+            </EntityContainer>
+            <EntityType Name="Goles">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.Int32" Nullable="false"/>
+                <Property Name="numeroCiclo" Type="Edm.Int32"/>
+                <NavigationProperty Name="autor" Type="GolesDeRiver.Jugadores" Partner="goles">
+                    <ReferentialConstraint Property="autor_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="autor_ID" Type="Edm.String"/>
+                <NavigationProperty Name="partido" Type="GolesDeRiver.Partidos" Partner="goles">
+                    <ReferentialConstraint Property="partido_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="partido_ID" Type="Edm.Int32"/>
+                <Property Name="minuto" Type="Edm.String"/>
+                <NavigationProperty Name="forma" Type="GolesDeRiver.Formas" Partner="goles">
+                    <ReferentialConstraint Property="forma_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="forma_ID" Type="Edm.String"/>
+                <Property Name="enContra" Type="Edm.Boolean"/>
+                <Property Name="nroEnCiclo" Type="Edm.Int32"/>
+                <Property Name="nroPersonal" Type="Edm.Int32"/>
+                <NavigationProperty Name="asistente" Type="GolesDeRiver.Jugadores" Partner="asistencias">
+                    <ReferentialConstraint Property="asistente_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="asistente_ID" Type="Edm.String"/>
+                <Property Name="numeroAsistenciaEnCiclo" Type="Edm.Int32"/>
+                <Property Name="numeroAsistencia" Type="Edm.Int32"/>
+            </EntityType>
+            <EntityType Name="Partidos">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.Int32" Nullable="false"/>
+                <NavigationProperty Name="equipo" Type="GolesDeRiver.Equipos" Partner="partidos">
+                    <ReferentialConstraint Property="equipo_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="equipo_ID" Type="Edm.String"/>
+                <Property Name="fecha" Type="Edm.String"/>
+                <NavigationProperty Name="condicion" Type="GolesDeRiver.Condiciones" Partner="partidos">
+                    <ReferentialConstraint Property="condicion_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="condicion_ID" Type="Edm.String"/>
+                <NavigationProperty Name="competencia" Type="GolesDeRiver.Competencias" Partner="partidos">
+                    <ReferentialConstraint Property="competencia_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="competencia_ID" Type="Edm.String"/>
+                <Property Name="golesAFavor" Type="Edm.Int32"/>
+                <Property Name="golesRecibidos" Type="Edm.Int32"/>
+                <NavigationProperty Name="dt" Type="GolesDeRiver.Directores" Partner="goles">
+                    <ReferentialConstraint Property="dt_ID" ReferencedProperty="ID"/>
+                </NavigationProperty>
+                <Property Name="dt_ID" Type="Edm.String"/>
+                <Property Name="link" Type="Edm.String"/>
+                <NavigationProperty Name="goles" Type="Collection(GolesDeRiver.Goles)" Partner="partido"/>
+            </EntityType>
+            <EntityType Name="Jugadores">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <NavigationProperty Name="goles" Type="Collection(GolesDeRiver.Goles)" Partner="autor"/>
+                <Property Name="nacionalidad" Type="Edm.String"/>
+                <NavigationProperty Name="asistencias" Type="Collection(GolesDeRiver.Goles)" Partner="asistente"/>
+            </EntityType>
+            <EntityType Name="Directores">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <Property Name="nacionalidad" Type="Edm.String"/>
+                <NavigationProperty Name="goles" Type="Collection(GolesDeRiver.Partidos)" Partner="dt"/>
+            </EntityType>
+            <EntityType Name="Equipos">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <NavigationProperty Name="partidos" Type="Collection(GolesDeRiver.Partidos)" Partner="equipo"/>
+            </EntityType>
+            <EntityType Name="Formas">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <NavigationProperty Name="goles" Type="Collection(GolesDeRiver.Goles)" Partner="forma"/>
+            </EntityType>
+            <EntityType Name="Competencias">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <Property Name="organizador" Type="Edm.String"/>
+                <Property Name="jerarquia" Type="Edm.String"/>
+                <NavigationProperty Name="partidos" Type="Collection(GolesDeRiver.Partidos)" Partner="competencia"/>
+            </EntityType>
+            <EntityType Name="Condiciones">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="modifiedAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <NavigationProperty Name="partidos" Type="Collection(GolesDeRiver.Partidos)" Partner="condicion"/>
+            </EntityType>
+            <Annotations Target="GolesDeRiver.EntityContainer/Goles">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record Type="Capabilities.DeleteRestrictionsType">
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record Type="Capabilities.InsertRestrictionsType">
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record Type="Capabilities.UpdateRestrictionsType">
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="GolesDeRiver.Goles/createdAt">
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                <Annotation Term="Core.Immutable" Bool="true"/>
+                <Annotation Term="Core.Computed" Bool="true"/>
+                <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                </Annotations>
+                <Annotations Target="GolesDeRiver.Goles/createdBy">
+                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                    <Annotation Term="Core.Immutable" Bool="true"/>
+                    <Annotation Term="Core.Computed" Bool="true"/>
+                    <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                        <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                        </Annotations>
+                        <Annotations Target="GolesDeRiver.Goles/modifiedAt">
+                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                            <Annotation Term="Core.Computed" Bool="true"/>
+                            <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                            </Annotations>
+                            <Annotations Target="GolesDeRiver.Goles/modifiedBy">
+                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                <Annotation Term="Core.Computed" Bool="true"/>
+                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                    <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                    </Annotations>
+                                    <Annotations Target="GolesDeRiver.EntityContainer/Partidos">
+                                        <Annotation Term="Capabilities.DeleteRestrictions">
+                                            <Record Type="Capabilities.DeleteRestrictionsType">
+                                                <PropertyValue Property="Deletable" Bool="false"/>
+                                            </Record>
+                                        </Annotation>
+                                        <Annotation Term="Capabilities.InsertRestrictions">
+                                            <Record Type="Capabilities.InsertRestrictionsType">
+                                                <PropertyValue Property="Insertable" Bool="false"/>
+                                            </Record>
+                                        </Annotation>
+                                        <Annotation Term="Capabilities.UpdateRestrictions">
+                                            <Record Type="Capabilities.UpdateRestrictionsType">
+                                                <PropertyValue Property="Updatable" Bool="false"/>
+                                            </Record>
+                                        </Annotation>
+                                    </Annotations>
+                                    <Annotations Target="GolesDeRiver.Partidos/createdAt">
+                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                        <Annotation Term="Core.Immutable" Bool="true"/>
+                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                        <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                        </Annotations>
+                                        <Annotations Target="GolesDeRiver.Partidos/createdBy">
+                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                            <Annotation Term="Core.Immutable" Bool="true"/>
+                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                            <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                </Annotations>
+                                                <Annotations Target="GolesDeRiver.Partidos/modifiedAt">
+                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                    <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                    </Annotations>
+                                                    <Annotations Target="GolesDeRiver.Partidos/modifiedBy">
+                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                        <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                            <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                            </Annotations>
+                                                            <Annotations Target="GolesDeRiver.EntityContainer/Jugadores">
+                                                                <Annotation Term="Capabilities.DeleteRestrictions">
+                                                                    <Record Type="Capabilities.DeleteRestrictionsType">
+                                                                        <PropertyValue Property="Deletable" Bool="false"/>
+                                                                    </Record>
+                                                                </Annotation>
+                                                                <Annotation Term="Capabilities.InsertRestrictions">
+                                                                    <Record Type="Capabilities.InsertRestrictionsType">
+                                                                        <PropertyValue Property="Insertable" Bool="false"/>
+                                                                    </Record>
+                                                                </Annotation>
+                                                                <Annotation Term="Capabilities.UpdateRestrictions">
+                                                                    <Record Type="Capabilities.UpdateRestrictionsType">
+                                                                        <PropertyValue Property="Updatable" Bool="false"/>
+                                                                    </Record>
+                                                                </Annotation>
+                                                            </Annotations>
+                                                            <Annotations Target="GolesDeRiver.Jugadores/createdAt">
+                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                                </Annotations>
+                                                                <Annotations Target="GolesDeRiver.Jugadores/createdBy">
+                                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                    <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                                    <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                        <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                                        </Annotations>
+                                                                        <Annotations Target="GolesDeRiver.Jugadores/modifiedAt">
+                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                            <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                                            </Annotations>
+                                                                            <Annotations Target="GolesDeRiver.Jugadores/modifiedBy">
+                                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                    <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                                    </Annotations>
+                                                                                    <Annotations Target="GolesDeRiver.EntityContainer/Directores">
+                                                                                        <Annotation Term="Capabilities.DeleteRestrictions">
+                                                                                            <Record Type="Capabilities.DeleteRestrictionsType">
+                                                                                                <PropertyValue Property="Deletable" Bool="false"/>
+                                                                                            </Record>
+                                                                                        </Annotation>
+                                                                                        <Annotation Term="Capabilities.InsertRestrictions">
+                                                                                            <Record Type="Capabilities.InsertRestrictionsType">
+                                                                                                <PropertyValue Property="Insertable" Bool="false"/>
+                                                                                            </Record>
+                                                                                        </Annotation>
+                                                                                        <Annotation Term="Capabilities.UpdateRestrictions">
+                                                                                            <Record Type="Capabilities.UpdateRestrictionsType">
+                                                                                                <PropertyValue Property="Updatable" Bool="false"/>
+                                                                                            </Record>
+                                                                                        </Annotation>
+                                                                                    </Annotations>
+                                                                                    <Annotations Target="GolesDeRiver.Directores/createdAt">
+                                                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                        <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                        <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                                                        </Annotations>
+                                                                                        <Annotations Target="GolesDeRiver.Directores/createdBy">
+                                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                            <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                            <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                                                                </Annotations>
+                                                                                                <Annotations Target="GolesDeRiver.Directores/modifiedAt">
+                                                                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                    <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                                                                    </Annotations>
+                                                                                                    <Annotations Target="GolesDeRiver.Directores/modifiedBy">
+                                                                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                        <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                            <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                                                            </Annotations>
+                                                                                                            <Annotations Target="GolesDeRiver.EntityContainer/Equipos">
+                                                                                                                <Annotation Term="Capabilities.DeleteRestrictions">
+                                                                                                                    <Record Type="Capabilities.DeleteRestrictionsType">
+                                                                                                                        <PropertyValue Property="Deletable" Bool="false"/>
+                                                                                                                    </Record>
+                                                                                                                </Annotation>
+                                                                                                                <Annotation Term="Capabilities.InsertRestrictions">
+                                                                                                                    <Record Type="Capabilities.InsertRestrictionsType">
+                                                                                                                        <PropertyValue Property="Insertable" Bool="false"/>
+                                                                                                                    </Record>
+                                                                                                                </Annotation>
+                                                                                                                <Annotation Term="Capabilities.UpdateRestrictions">
+                                                                                                                    <Record Type="Capabilities.UpdateRestrictionsType">
+                                                                                                                        <PropertyValue Property="Updatable" Bool="false"/>
+                                                                                                                    </Record>
+                                                                                                                </Annotation>
+                                                                                                            </Annotations>
+                                                                                                            <Annotations Target="GolesDeRiver.Equipos/createdAt">
+                                                                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                                                                                </Annotations>
+                                                                                                                <Annotations Target="GolesDeRiver.Equipos/createdBy">
+                                                                                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                    <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                    <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                        <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                                                                                        </Annotations>
+                                                                                                                        <Annotations Target="GolesDeRiver.Equipos/modifiedAt">
+                                                                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                            <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                                                                                            </Annotations>
+                                                                                                                            <Annotations Target="GolesDeRiver.Equipos/modifiedBy">
+                                                                                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                                                                                    </Annotations>
+                                                                                                                                    <Annotations Target="GolesDeRiver.EntityContainer/Formas">
+                                                                                                                                        <Annotation Term="Capabilities.DeleteRestrictions">
+                                                                                                                                            <Record Type="Capabilities.DeleteRestrictionsType">
+                                                                                                                                                <PropertyValue Property="Deletable" Bool="false"/>
+                                                                                                                                            </Record>
+                                                                                                                                        </Annotation>
+                                                                                                                                        <Annotation Term="Capabilities.InsertRestrictions">
+                                                                                                                                            <Record Type="Capabilities.InsertRestrictionsType">
+                                                                                                                                                <PropertyValue Property="Insertable" Bool="false"/>
+                                                                                                                                            </Record>
+                                                                                                                                        </Annotation>
+                                                                                                                                        <Annotation Term="Capabilities.UpdateRestrictions">
+                                                                                                                                            <Record Type="Capabilities.UpdateRestrictionsType">
+                                                                                                                                                <PropertyValue Property="Updatable" Bool="false"/>
+                                                                                                                                            </Record>
+                                                                                                                                        </Annotation>
+                                                                                                                                    </Annotations>
+                                                                                                                                    <Annotations Target="GolesDeRiver.Formas/createdAt">
+                                                                                                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                        <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                                                                                                        </Annotations>
+                                                                                                                                        <Annotations Target="GolesDeRiver.Formas/createdBy">
+                                                                                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                            <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                            <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                                                                                                                </Annotations>
+                                                                                                                                                <Annotations Target="GolesDeRiver.Formas/modifiedAt">
+                                                                                                                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                                                                                                                    </Annotations>
+                                                                                                                                                    <Annotations Target="GolesDeRiver.Formas/modifiedBy">
+                                                                                                                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                        <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                                                                                                            </Annotations>
+                                                                                                                                                            <Annotations Target="GolesDeRiver.EntityContainer/Competencias">
+                                                                                                                                                                <Annotation Term="Capabilities.DeleteRestrictions">
+                                                                                                                                                                    <Record Type="Capabilities.DeleteRestrictionsType">
+                                                                                                                                                                        <PropertyValue Property="Deletable" Bool="false"/>
+                                                                                                                                                                    </Record>
+                                                                                                                                                                </Annotation>
+                                                                                                                                                                <Annotation Term="Capabilities.InsertRestrictions">
+                                                                                                                                                                    <Record Type="Capabilities.InsertRestrictionsType">
+                                                                                                                                                                        <PropertyValue Property="Insertable" Bool="false"/>
+                                                                                                                                                                    </Record>
+                                                                                                                                                                </Annotation>
+                                                                                                                                                                <Annotation Term="Capabilities.UpdateRestrictions">
+                                                                                                                                                                    <Record Type="Capabilities.UpdateRestrictionsType">
+                                                                                                                                                                        <PropertyValue Property="Updatable" Bool="false"/>
+                                                                                                                                                                    </Record>
+                                                                                                                                                                </Annotation>
+                                                                                                                                                            </Annotations>
+                                                                                                                                                            <Annotations Target="GolesDeRiver.Competencias/createdAt">
+                                                                                                                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                                                                                                                                </Annotations>
+                                                                                                                                                                <Annotations Target="GolesDeRiver.Competencias/createdBy">
+                                                                                                                                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                    <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                    <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                                                                                                                                        </Annotations>
+                                                                                                                                                                        <Annotations Target="GolesDeRiver.Competencias/modifiedAt">
+                                                                                                                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                                                                                                                                            </Annotations>
+                                                                                                                                                                            <Annotations Target="GolesDeRiver.Competencias/modifiedBy">
+                                                                                                                                                                                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                                <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                                <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                                                                                                                                    </Annotations>
+                                                                                                                                                                                    <Annotations Target="GolesDeRiver.EntityContainer/Condiciones">
+                                                                                                                                                                                        <Annotation Term="Capabilities.DeleteRestrictions">
+                                                                                                                                                                                            <Record Type="Capabilities.DeleteRestrictionsType">
+                                                                                                                                                                                                <PropertyValue Property="Deletable" Bool="false"/>
+                                                                                                                                                                                            </Record>
+                                                                                                                                                                                        </Annotation>
+                                                                                                                                                                                        <Annotation Term="Capabilities.InsertRestrictions">
+                                                                                                                                                                                            <Record Type="Capabilities.InsertRestrictionsType">
+                                                                                                                                                                                                <PropertyValue Property="Insertable" Bool="false"/>
+                                                                                                                                                                                            </Record>
+                                                                                                                                                                                        </Annotation>
+                                                                                                                                                                                        <Annotation Term="Capabilities.UpdateRestrictions">
+                                                                                                                                                                                            <Record Type="Capabilities.UpdateRestrictionsType">
+                                                                                                                                                                                                <PropertyValue Property="Updatable" Bool="false"/>
+                                                                                                                                                                                            </Record>
+                                                                                                                                                                                        </Annotation>
+                                                                                                                                                                                    </Annotations>
+                                                                                                                                                                                    <Annotations Target="GolesDeRiver.Condiciones/createdAt">
+                                                                                                                                                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                                        <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                                                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                                        <Annotation Term="Common.Label" String="{i18n>CreatedAt}"/>
+                                                                                                                                                                                        </Annotations>
+                                                                                                                                                                                        <Annotations Target="GolesDeRiver.Condiciones/createdBy">
+                                                                                                                                                                                            <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                                            <Annotation Term="Core.Immutable" Bool="true"/>
+                                                                                                                                                                                            <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                                            <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                                                                <Annotation Term="Common.Label" String="{i18n>CreatedBy}"/>
+                                                                                                                                                                                                </Annotations>
+                                                                                                                                                                                                <Annotations Target="GolesDeRiver.Condiciones/modifiedAt">
+                                                                                                                                                                                                    <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                                                    <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                                                    <Annotation Term="Common.Label" String="{i18n>ChangedAt}"/>
+                                                                                                                                                                                                    </Annotations>
+                                                                                                                                                                                                    <Annotations Target="GolesDeRiver.Condiciones/modifiedBy">
+                                                                                                                                                                                                        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+                                                                                                                                                                                                        <Annotation Term="Core.Computed" Bool="true"/>
+                                                                                                                                                                                                        <Annotation Term="Core.Description" String="{i18n>UserID.Description}"/>
+                                                                                                                                                                                                            <Annotation Term="Common.Label" String="{i18n>ChangedBy}"/>
+                                                                                                                                                                                                            </Annotations>
+                                                                                                                                                                                                        </Schema>
+                                                                                                                                                                                                    </edmx:DataServices>
+                                                                                                                                                                                                </edmx:Edmx>

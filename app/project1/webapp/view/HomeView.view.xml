@@ -1,0 +1,85 @@
+<mvc:View controllerName="project1.controller.HomeView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:core="sap.ui.core">
+    <App>
+        <pages>
+            <Page id="page" title="Goles de River">
+                <content>
+                    <Panel headerText="Goles">
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="Goles"/>
+                                <ToolbarSpacer/>
+                                <Button id="prev" text="Compilar" icon="sap-icon://media-play" press=".compilado"/>
+                                <SearchField id="search" width="50%" search=".searchMethod" placeholder="Buscar autor"/>
+                            </Toolbar>
+                        </headerToolbar>
+                        <ScrollContainer height="85vh" vertical="true">
+                        <Table
+                            id="table"
+                            inset="false"
+                            items="{
+                                path: '/Goles'
+                            }"
+                            alternateRowColors="true"
+                            class="sapFDynamicPageAlignContent"
+                            growing="true"
+                            growingThreshold="100"
+                            sticky="ColumnHeaders">
+                            <columns>
+                                <Column>
+                                    <Text text="ID"/>
+                                </Column>
+                                <Column>
+                                    <Text text="N° en el ciclo"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Autor"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Rival"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Minuto"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Competencia"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Fecha"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Número personal"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Asistente"/>
+                                </Column>
+                                <Column>
+                                    <Text text="Número asistencia"/>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem type="Navigation" press=".onListItemPress">
+                                    <cells>
+                                        <ObjectNumber unit="{ID}"/>
+                                        <ObjectNumber unit="{numeroCiclo}"/>
+                                        <Text text="{autor/ID}"/>
+                                        <Text text="{partido/equipo/ID}"/>
+                                        <Text text="{minuto}"/>
+                                        <Text text="{partido/competencia/ID}"/>
+                                        <Text text="{partido/fecha}"/>
+                                        <ObjectNumber unit="{nroPersonal}"/>
+                                        <Text text="{asistente/ID}"/>
+                                        <ObjectNumber unit="{numeroAsistencia}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                        </ScrollContainer>
+                    </Panel>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

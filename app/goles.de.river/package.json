@@ -1,0 +1,15 @@
+{
+    "name": "goles.de.river",
+    "version": "0.0.1",
+    "description": "Estadísticas del Club Atlético River Plate",
+    "keywords": [
+        "ui5",
+        "openui5",
+        "sapui5"
+    ],
+    "main": "webapp/index.html",
+    "scripts": {
+        "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+    },
+    "devDependencies": { }
+}

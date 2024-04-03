@@ -1,0 +1,11 @@
+/* Enter your custom styles here */
+.vid {
+    margin: 10px 10px 10px calc(50% - 420px);
+    border-radius: 1%;
+}
+
+.buttonPanel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

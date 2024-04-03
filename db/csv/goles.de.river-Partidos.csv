@@ -1,0 +1,449 @@
+ID,equipo_ID,fecha,condicion_ID,competencia_ID,golesAFavor,golesRecibidos,dt_ID,video_ID
+1,Ferro Carril Oeste,27/07/14,Neutral,Copa Argentina,0,0,Marcelo Gallardo,1
+2,Gimnasia LP,10/08/14,Visitante,Torneo Local,1,1,Marcelo Gallardo,2
+3,Rosario Central,17/08/14,Local,Torneo Local,2,0,Marcelo Gallardo,3
+4,Colón,20/08/14,Neutral,Copa Argentina,0,0,Marcelo Gallardo,4
+5,Godoy Cruz,24/08/14,Visitante,Torneo Local,4,0,Marcelo Gallardo,5
+6,Defensa y Justicia,27/08/14,Local,Torneo Local,3,0,Marcelo Gallardo,6
+7,San Lorenzo,31/08/14,Visitante,Torneo Local,3,1,Marcelo Gallardo,7
+8,Godoy Cruz,03/09/14,Visitante,Sudamericana,1,0,Marcelo Gallardo,8
+9,Tigre,07/09/14,Local,Torneo Local,2,0,Marcelo Gallardo,9
+10,Godoy Cruz,17/09/14,Local,Sudamericana,2,0,Marcelo Gallardo,10
+11,Independiente,21/09/14,Local,Torneo Local,4,1,Marcelo Gallardo,11
+12,Arsenal,25/09/14,Visitante,Torneo Local,1,1,Marcelo Gallardo,12
+13,Lanús,28/09/14,Visitante,Torneo Local,1,1,Marcelo Gallardo,13
+14,Boca,05/10/14,Local,Torneo Local,1,1,Marcelo Gallardo,14
+15,Rosario Central,09/10/14,Neutral,Copa Argentina,0,0,Marcelo Gallardo,15
+16,Newell's,12/10/14,Visitante,Torneo Local,1,0,Marcelo Gallardo,16
+17,Libertad,16/10/14,Visitante,Sudamericana,3,1,Marcelo Gallardo,17
+18,Belgrano,19/10/14,Local,Torneo Local,3,0,Marcelo Gallardo,18
+19,Libertad,22/10/14,Local,Sudamericana,2,0,Marcelo Gallardo,19
+20,Rafaela,26/10/14,Visitante,Torneo Local,2,1,Marcelo Gallardo,20
+21,Estudiantes,29/10/14,Visitante,Sudamericana,2,1,Marcelo Gallardo,21
+22,Estudiantes,06/11/14,Local,Sudamericana,3,2,Marcelo Gallardo,22
+23,Vélez,09/11/14,Visitante,Torneo Local,1,1,Marcelo Gallardo,23
+24,Estudiantes,12/11/14,Local,Torneo Local,0,1,Marcelo Gallardo,24
+25,Olimpo,16/11/14,Local,Torneo Local,1,1,Marcelo Gallardo,25
+26,Boca,20/11/14,Visitante,Sudamericana,0,0,Marcelo Gallardo,26
+27,Racing,23/11/14,Visitante,Torneo Local,0,1,Marcelo Gallardo,27
+28,Boca,27/11/14,Local,Sudamericana,1,0,Marcelo Gallardo,28
+29,Banfield,30/11/14,Local,Torneo Local,3,2,Marcelo Gallardo,29
+30,Atlético Nacional,03/12/14,Visitante,Sudamericana,1,1,Marcelo Gallardo,30
+31,Atlético Nacional,10/12/14,Local,Sudamericana,2,0,Marcelo Gallardo,31
+32,Quilmes,14/12/14,Visitante,Torneo Local,1,0,Marcelo Gallardo,32
+33,San Lorenzo,06/02/15,Local,Recopa Sudamericana,1,0,Marcelo Gallardo,33
+34,San Lorenzo,11/02/15,Visitante,Recopa Sudamericana,1,0,Marcelo Gallardo,34
+35,Sarmiento,15/02/15,Visitante,Torneo Local,4,1,Marcelo Gallardo,35
+36,San José,19/02/15,Visitante,Libertadores,0,2,Marcelo Gallardo,36
+37,Quilmes,22/02/15,Local,Torneo Local,2,2,Marcelo Gallardo,37
+38,Belgrano,01/03/15,Visitante,Torneo Local,2,1,Marcelo Gallardo,38
+39,Tigres,05/03/15,Local,Libertadores,1,1,Marcelo Gallardo,39
+40,Unión,08/03/15,Local,Torneo Local,2,2,Marcelo Gallardo,40
+41,Juan Aurich,12/03/15,Visitante,Libertadores,1,1,Marcelo Gallardo,41
+42,Arsenal,16/03/15,Visitante,Torneo Local,3,3,Marcelo Gallardo,42
+43,Juan Aurich,19/03/15,Local,Libertadores,1,1,Marcelo Gallardo,43
+44,Godoy Cruz,22/03/15,Local,Torneo Local,1,0,Marcelo Gallardo,44
+45,Gimnasia LP,29/03/15,Visitante,Torneo Local,3,2,Marcelo Gallardo,45
+46,San Lorenzo,05/04/15,Local,Torneo Local,1,0,Marcelo Gallardo,46
+47,Tigres,08/04/15,Visitante,Libertadores,2,2,Marcelo Gallardo,47
+48,Argentinos Jrs,12/04/15,Visitante,Torneo Local,2,1,Marcelo Gallardo,48
+49,San José,15/04/15,Local,Libertadores,3,0,Marcelo Gallardo,49
+50,Banfield,19/04/15,Local,Torneo Local,4,1,Marcelo Gallardo,50
+51,Huracán,25/04/15,Neutral,Supercopa Argentina,0,1,Marcelo Gallardo,51
+52,Boca,03/05/15,Visitante,Torneo Local,0,2,Marcelo Gallardo,52
+53,Boca,07/05/15,Local,Libertadores,1,0,Marcelo Gallardo,53
+54,Racing,10/05/15,Local,Torneo Local,0,0,Marcelo Gallardo,54
+55,Cruzeiro,21/05/15,Local,Libertadores,0,1,Marcelo Gallardo,55
+56,Cruzeiro,27/05/15,Visitante,Libertadores,3,0,Marcelo Gallardo,56
+57,Rosario Central,31/05/15,Local,Torneo Local,2,0,Marcelo Gallardo,57
+58,Liniers,03/06/15,Neutral,Copa Argentina,2,0,Marcelo Gallardo,58
+59,Olimpo,07/06/15,Visitante,Torneo Local,1,1,Marcelo Gallardo,59
+60,Rosario Central,03/07/15,Neutral,Copa Argentina,0,2,Marcelo Gallardo,60
+61,Tigre,08/07/15,Visitante,Torneo Local,0,0,Marcelo Gallardo,61
+62,Temperley,11/07/15,Local,Torneo Local,1,1,Marcelo Gallardo,62
+63,Guaraní,14/07/15,Local,Libertadores,2,0,Marcelo Gallardo,63
+64,Rafaela,18/07/15,Visitante,Torneo Local,5,1,Marcelo Gallardo,64
+65,Guaraní,21/07/15,Visitante,Libertadores,1,1,Marcelo Gallardo,65
+66,Colón,25/07/15,Local,Torneo Local,3,1,Marcelo Gallardo,66
+67,Tigres,05/08/15,Local,Libertadores,3,0,Marcelo Gallardo,67
+68,Gamba Osaka,11/08/15,Neutral,Suruga Bank,3,0,Marcelo Gallardo,68
+69,Estudiantes,23/08/15,Visitante,Torneo Local,1,2,Marcelo Gallardo,69
+70,Huracán,30/08/15,Local,Torneo Local,1,1,Marcelo Gallardo,70
+71,Nueva Chicago,06/09/15,Visitante,Torneo Local,4,1,Marcelo Gallardo,71
+72,Boca,13/09/15,Local,Torneo Local,0,1,Marcelo Gallardo,72
+73,Lanús,20/09/15,Local,Torneo Local,1,1,Marcelo Gallardo,73
+74,Liga de Quito,23/09/15,Local,Sudamericana,2,0,Marcelo Gallardo,74
+75,Crucero del Norte,26/09/15,Visitante,Torneo Local,1,0,Marcelo Gallardo,75
+76,Liga de Quito,30/09/15,Visitante,Sudamericana,0,1,Marcelo Gallardo,76
+77,Defensa y Justicia,14/10/15,Visitante,Torneo Local,0,1,Marcelo Gallardo,77
+78,Aldosivi,18/10/15,Local,Torneo Local,1,1,Marcelo Gallardo,78
+79,Chapecoense,21/10/15,Local,Sudamericana,3,1,Marcelo Gallardo,79
+80,Chapecoense,28/10/15,Visitante,Sudamericana,1,2,Marcelo Gallardo,80
+81,Vélez,31/10/15,Visitante,Torneo Local,1,0,Marcelo Gallardo,81
+82,Huracán,26/11/15,Visitante,Sudamericana,2,2,Marcelo Gallardo,82
+83,Hiroshima,16/12/15,Neutral,Mundial de Clubes,1,0,Marcelo Gallardo,83
+84,Quilmes,08/02/16,Local,Torneo Local,5,1,Marcelo Gallardo,84
+85,Belgrano,14/02/16,Visitante,Torneo Local,2,3,Marcelo Gallardo,85
+86,Godoy Cruz,18/02/16,Local,Torneo Local,1,2,Marcelo Gallardo,86
+87,Rosario Central,21/02/16,Visitante,Torneo Local,3,3,Marcelo Gallardo,87
+88,Trujillanos,25/02/16,Visitante,Libertadores,4,0,Marcelo Gallardo,88
+89,Independiente,29/02/16,Local,Torneo Local,1,0,Marcelo Gallardo,89
+90,Boca,06/03/16,Local,Torneo Local,0,0,Marcelo Gallardo,90
+91,Sao Paulo,10/03/16,Local,Libertadores,1,1,Marcelo Gallardo,91
+92,Colón,13/03/16,Visitante,Torneo Local,1,4,Marcelo Gallardo,92
+93,The Strongest,16/03/16,Visitante,Libertadores,1,1,Marcelo Gallardo,93
+94,Banfield,20/03/16,Local,Torneo Local,1,1,Marcelo Gallardo,94
+95,Patronato,02/04/16,Visitante,Torneo Local,1,2,Marcelo Gallardo,95
+96,The Strongest,06/04/16,Local,Libertadores,6,0,Marcelo Gallardo,96
+97,Sarmiento,09/04/16,Local,Torneo Local,2,2,Marcelo Gallardo,97
+98,Sao Paulo,13/04/16,Visitante,Libertadores,1,2,Marcelo Gallardo,98
+99,Olimpo,17/04/16,Visitante,Torneo Local,1,0,Marcelo Gallardo,99
+100,Trujillanos,21/04/16,Local,Libertadores,4,3,Marcelo Gallardo,100
+101,Boca,24/04/16,Visitante,Torneo Local,0,0,Marcelo Gallardo,101
+102,Independiente del Valle,28/04/16,Visitante,Libertadores,0,2,Marcelo Gallardo,102
+103,Vélez,30/04/16,Local,Torneo Local,0,0,Marcelo Gallardo,103
+104,Independiente del Valle,04/05/16,Local,Libertadores,1,0,Marcelo Gallardo,104
+105,San Lorenzo,07/05/16,Visitante,Torneo Local,1,2,Marcelo Gallardo,105
+106,Gimnasia LP,14/05/16,Local,Torneo Local,1,0,Marcelo Gallardo,106
+107,Arsenal,20/05/16,Visitante,Torneo Local,1,2,Marcelo Gallardo,107
+108,Rivadavia,31/07/16,Neutral,Copa Argentina,3,0,Marcelo Gallardo,108
+109,Estudiantes SL,07/08/16,Neutral,Copa Argentina,2,1,Marcelo Gallardo,109
+110,Santa Fe,25/08/16,Local,Recopa Sudamericana,2,1,Marcelo Gallardo,110
+111,Banfield,28/08/16,Local,Torneo Local,4,1,Marcelo Gallardo,111
+112,Talleres,11/09/16,Visitante,Torneo Local,1,0,Marcelo Gallardo,112
+113,San Martín SJ,18/09/16,Local,Torneo Local,1,1,Marcelo Gallardo,113
+114,Arsenal,22/09/16,Neutral,Copa Argentina,1,0,Marcelo Gallardo,114
+115,Defensa y Justicia,25/09/16,Visitante,Torneo Local,3,3,Marcelo Gallardo,115
+116,Vélez,01/10/16,Local,Torneo Local,3,0,Marcelo Gallardo,116
+117,Patronato,16/10/16,Visitante,Torneo Local,1,2,Marcelo Gallardo,117
+118,Rafaela,22/10/16,Local,Torneo Local,1,0,Marcelo Gallardo,118
+119,Unión,27/10/16,Neutral,Copa Argentina,3,0,Marcelo Gallardo,119
+120,Arsenal,30/10/16,Visitante,Torneo Local,2,2,Marcelo Gallardo,120
+121,Estudiantes,05/11/16,Local,Torneo Local,1,1,Marcelo Gallardo,121
+122,Newell's,20/11/16,Visitante,Torneo Local,0,1,Marcelo Gallardo,122
+123,Huracán,27/11/16,Local,Torneo Local,1,0,Marcelo Gallardo,123
+124,Gimnasia LP,01/12/16,Neutral,Copa Argentina,2,0,Marcelo Gallardo,124
+125,Independiente,04/12/16,Visitante,Torneo Local,0,1,Marcelo Gallardo,125
+126,Boca,11/12/16,Local,Torneo Local,2,4,Marcelo Gallardo,126
+127,Rosario Central,15/12/16,Neutral,Copa Argentina,4,3,Marcelo Gallardo,127
+128,Olimpo,18/12/16,Visitante,Torneo Local,2,1,Marcelo Gallardo,128
+129,Lanús,04/02/17,Neutral,Supercopa Argentina,0,3,Marcelo Gallardo,129
+130,Independiente Medellín,15/03/17,Visitante,Libertadores,3,1,Marcelo Gallardo,130
+131,Lanús,21/03/17,Visitante,Torneo Local,3,1,Marcelo Gallardo,131
+132,Belgrano,26/03/17,Local,Torneo Local,2,1,Marcelo Gallardo,132
+133,Godoy Cruz,02/04/17,Visitante,Torneo Local,2,1,Marcelo Gallardo,133
+134,Quilmes,09/04/17,Local,Torneo Local,2,0,Marcelo Gallardo,134
+135,Melgar,13/04/17,Local,Libertadores,4,2,Marcelo Gallardo,135
+136,Tigre,16/04/17,Visitante,Torneo Local,2,0,Marcelo Gallardo,136
+137,Sarmiento,23/04/17,Local,Torneo Local,1,1,Marcelo Gallardo,137
+138,Emelec,27/04/17,Visitante,Libertadores,2,1,Marcelo Gallardo,138
+139,Temperley,06/05/17,Local,Torneo Local,4,1,Marcelo Gallardo,139
+140,Emelec,10/05/17,Local,Libertadores,1,1,Marcelo Gallardo,140
+141,Boca,14/05/17,Visitante,Torneo Local,3,1,Marcelo Gallardo,141
+142,Melgar,18/05/17,Visitante,Libertadores,3,2,Marcelo Gallardo,142
+143,Gimnasia LP,22/05/17,Visitante,Torneo Local,3,0,Marcelo Gallardo,143
+144,Independiente Medellín,25/05/17,Local,Libertadores,1,2,Marcelo Gallardo,144
+145,Rosario Central,28/05/17,Local,Torneo Local,0,0,Marcelo Gallardo,145
+146,Atlético Tucumán,31/05/17,Visitante,Torneo Local,3,0,Marcelo Gallardo,146
+147,San Lorenzo,04/06/17,Visitante,Torneo Local,1,2,Marcelo Gallardo,147
+148,Racing,18/06/17,Local,Torneo Local,2,3,Marcelo Gallardo,148
+149,Aldosivi,21/06/17,Local,Torneo Local,1,0,Marcelo Gallardo,149
+150,Colón,25/06/17,Visitante,Torneo Local,0,0,Marcelo Gallardo,150
+151,Guaraní,04/07/17,Visitante,Libertadores,2,0,Marcelo Gallardo,151
+152,Guaraní,08/08/17,Local,Libertadores,1,1,Marcelo Gallardo,152
+153,Atlas,15/08/17,Neutral,Copa Argentina,3,0,Marcelo Gallardo,153
+154,Instituto,20/08/17,Neutral,Copa Argentina,4,1,Marcelo Gallardo,154
+155,Temperley,27/08/17,Visitante,Torneo Local,1,0,Marcelo Gallardo,155
+156,Banfield,10/09/17,Local,Torneo Local,3,1,Marcelo Gallardo,156
+157,San Martín SJ,17/09/17,Visitante,Torneo Local,3,1,Marcelo Gallardo,157
+158,Wilstermann,21/09/17,Local,Libertadores,8,0,Marcelo Gallardo,158
+159,Argentinos Jrs,24/09/17,Local,Torneo Local,1,1,Marcelo Gallardo,159
+160,Tigre,01/10/17,Visitante,Torneo Local,1,1,Marcelo Gallardo,160
+161,Defensa y Justicia,07/10/17,Neutral,Copa Argentina,3,0,Marcelo Gallardo,161
+162,Atlético Tucumán,15/10/17,Local,Torneo Local,2,2,Marcelo Gallardo,162
+163,Atlanta,18/10/17,Neutral,Copa Argentina,4,1,Marcelo Gallardo,163
+164,Lanús,24/10/17,Local,Libertadores,1,0,Marcelo Gallardo,164
+165,Lanús,31/10/17,Visitante,Libertadores,2,4,Marcelo Gallardo,165
+166,Boca,05/11/17,Local,Torneo Local,1,2,Marcelo Gallardo,166
+167,Morón,12/11/17,Neutral,Copa Argentina,3,0,Marcelo Gallardo,167
+168,Independiente,18/11/17,Visitante,Torneo Local,0,1,Marcelo Gallardo,168
+169,Unión,22/11/17,Local,Torneo Local,2,0,Marcelo Gallardo,169
+170,Newell's,26/11/17,Local,Torneo Local,1,3,Marcelo Gallardo,170
+171,Gimnasia LP,03/12/17,Visitante,Torneo Local,1,2,Marcelo Gallardo,171
+172,Atlético Tucumán,09/12/17,Neutral,Copa Argentina,2,1,Marcelo Gallardo,172
+173,Olimpo,03/02/18,Local,Torneo Local,2,0,Marcelo Gallardo,173
+174,Godoy Cruz,18/02/18,Local,Torneo Local,2,2,Marcelo Gallardo,174
+175,Vélez,24/02/18,Visitante,Torneo Local,0,1,Marcelo Gallardo,175
+176,Flamengo,28/02/18,Visitante,Libertadores,2,2,Marcelo Gallardo,176
+177,Chacarita,04/03/18,Local,Torneo Local,1,1,Marcelo Gallardo,177
+178,Patronato,10/03/18,Visitante,Torneo Local,1,0,Marcelo Gallardo,178
+179,Boca,14/03/18,Neutral,Supercopa Argentina,2,0,Marcelo Gallardo,179
+180,Belgrano,18/03/18,Local,Torneo Local,3,1,Marcelo Gallardo,180
+181,Defensa y Justicia,01/04/18,Visitante,Torneo Local,3,1,Marcelo Gallardo,181
+182,Santa Fe,05/04/18,Local,Libertadores,0,0,Marcelo Gallardo,182
+183,Racing,08/04/18,Visitante,Torneo Local,2,0,Marcelo Gallardo,183
+184,Rosario Central,15/04/18,Local,Torneo Local,2,0,Marcelo Gallardo,184
+185,Emelec,19/04/18,Visitante,Libertadores,1,0,Marcelo Gallardo,185
+186,Arsenal,22/04/18,Visitante,Torneo Local,3,0,Marcelo Gallardo,186
+187,Emelec,26/04/18,Local,Libertadores,2,1,Marcelo Gallardo,187
+188,Santa Fe,03/05/18,Visitante,Libertadores,1,0,Marcelo Gallardo,188
+189,Estudiantes,11/05/18,Local,Torneo Local,2,0,Marcelo Gallardo,189
+190,San Lorenzo,14/05/18,Local,Torneo Local,2,0,Marcelo Gallardo,190
+191,Central Norte,22/07/18,Neutral,Copa Argentina,7,0,Marcelo Gallardo,191
+192,Villa Dálmine,28/07/18,Neutral,Copa Argentina,3,1,Marcelo Gallardo,192
+193,Racing,08/08/18,Visitante,Libertadores,0,0,Marcelo Gallardo,193
+194,Huracán,12/08/18,Visitante,Torneo Local,0,0,Marcelo Gallardo,194
+195,Belgrano,18/08/18,Local,Torneo Local,0,0,Marcelo Gallardo,195
+196,Argentinos Jrs,25/08/18,Local,Torneo Local,0,0,Marcelo Gallardo,196
+197,Racing,29/08/18,Local,Libertadores,3,0,Marcelo Gallardo,197
+198,San Lorenzo,01/09/18,Visitante,Torneo Local,1,1,Marcelo Gallardo,198
+199,Platense,12/09/18,Neutral,Copa Argentina,2,0,Marcelo Gallardo,199
+200,San Martín SJ,15/09/18,Local,Torneo Local,4,1,Marcelo Gallardo,200
+201,Independiente,19/09/18,Visitante,Libertadores,0,0,Marcelo Gallardo,201
+202,Boca,23/09/18,Visitante,Torneo Local,2,0,Marcelo Gallardo,202
+203,Lanús,28/09/18,Visitante,Torneo Local,5,1,Marcelo Gallardo,203
+204,Independiente,02/10/18,Local,Libertadores,3,1,Marcelo Gallardo,204
+205,Sarmiento R,07/10/18,Neutral,Copa Argentina,3,1,Marcelo Gallardo,205
+206,Colón,19/10/18,Visitante,Torneo Local,0,1,Marcelo Gallardo,206
+207,Gremio,23/10/18,Local,Libertadores,0,1,Marcelo Gallardo,207
+208,Aldosivi,27/10/18,Local,Torneo Local,1,0,Marcelo Gallardo,208
+209,Gremio,30/10/18,Visitante,Libertadores,2,1,Marcelo Gallardo,209
+210,Boca,11/11/18,Visitante,Libertadores,2,2,Marcelo Gallardo,210
+211,Gimnasia LP,28/11/18,Neutral,Copa Argentina,2,2,Marcelo Gallardo,211
+212,Gimnasia LP,02/12/18,Local,Torneo Local,3,1,Marcelo Gallardo,212
+213,Boca,09/12/18,Neutral,Libertadores,3,1,Marcelo Gallardo,213
+214,Al Ain,18/12/18,Neutral,Mundial de Clubes,2,2,Marcelo Gallardo,214
+215,Kashima,22/12/18,Neutral,Mundial de Clubes,4,0,Marcelo Gallardo,215
+216,Defensa y Justicia,19/01/19,Local,Torneo Local,0,1,Marcelo Gallardo,216
+217,Unión,23/01/19,Local,Torneo Local,1,2,Marcelo Gallardo,217
+218,Patronato,27/01/19,Local,Torneo Local,1,3,Marcelo Gallardo,218
+219,Godoy Cruz,30/01/19,Visitante,Torneo Local,4,0,Marcelo Gallardo,219
+220,Vélez,03/02/19,Visitante,Torneo Local,2,1,Marcelo Gallardo,220
+221,Racing,10/02/19,Local,Torneo Local,2,0,Marcelo Gallardo,221
+222,Rosario Central,14/02/19,Visitante,Torneo Local,1,1,Marcelo Gallardo,222
+223,Banfield,17/02/19,Visitante,Torneo Local,1,1,Marcelo Gallardo,223
+224,San Martín T,24/02/19,Local,Torneo Local,2,1,Marcelo Gallardo,224
+225,Newell's,02/03/19,Local,Torneo Local,4,2,Marcelo Gallardo,225
+226,Alianza Lima,06/03/19,Visitante,Libertadores,1,1,Marcelo Gallardo,226
+227,Atlético Tucumán,10/03/19,Visitante,Torneo Local,1,0,Marcelo Gallardo,227
+228,Independiente,17/03/19,Local,Torneo Local,3,0,Marcelo Gallardo,228
+229,Talleres,30/03/19,Visitante,Torneo Local,2,0,Marcelo Gallardo,229
+230,Internacional,03/04/19,Visitante,Libertadores,2,2,Marcelo Gallardo,230
+231,Tigre,07/04/19,Local,Torneo Local,2,3,Marcelo Gallardo,231
+232,Alianza Lima,11/04/19,Local,Libertadores,3,0,Marcelo Gallardo,232
+233,Argentinos Merlo,17/04/19,Neutral,Copa Argentina,3,0,Marcelo Gallardo,233
+234,Palestino,24/04/19,Visitante,Libertadores,2,0,Marcelo Gallardo,234
+235,Aldosivi,28/04/19,Visitante,Copa de la Liga,1,1,Marcelo Gallardo,235
+236,Aldosivi,03/05/19,Local,Copa de la Liga,6,0,Marcelo Gallardo,236
+237,Internacional,07/05/19,Local,Libertadores,2,2,Marcelo Gallardo,237
+238,Atlético Tucumán,11/05/19,Visitante,Copa de la Liga,0,3,Marcelo Gallardo,238
+239,Atlético Tucumán,14/05/19,Local,Copa de la Liga,4,1,Marcelo Gallardo,239
+240,Paranaense,22/05/19,Visitante,Recopa Sudamericana,0,1,Marcelo Gallardo,240
+241,Paranaense,30/05/19,Local,Recopa Sudamericana,3,0,Marcelo Gallardo,241
+242,Gimnasia de Mendoza,16/07/19,Neutral,Copa Argentina,1,1,Marcelo Gallardo,242
+243,Cruzeiro,23/07/19,Local,Libertadores,0,0,Marcelo Gallardo,243
+244,Argentinos Jrs,27/07/19,Visitante,Torneo Local,1,1,Marcelo Gallardo,244
+245,Cruzeiro,30/07/19,Visitante,Libertadores,0,0,Marcelo Gallardo,245
+246,Lanús,04/08/19,Local,Torneo Local,3,0,Marcelo Gallardo,246
+247,Racing,17/08/19,Visitante,Torneo Local,6,1,Marcelo Gallardo,247
+248,Cerro Porteño,22/08/19,Local,Libertadores,2,0,Marcelo Gallardo,248
+249,Talleres,25/08/19,Local,Torneo Local,0,1,Marcelo Gallardo,249
+250,Cerro Porteño,29/08/19,Visitante,Libertadores,1,1,Marcelo Gallardo,250
+251,Boca,01/09/19,Local,Torneo Local,0,0,Marcelo Gallardo,251
+252,Huracán,14/09/19,Visitante,Torneo Local,4,0,Marcelo Gallardo,252
+253,Godoy Cruz,18/09/19,Neutral,Copa Argentina,1,0,Marcelo Gallardo,253
+254,Vélez,22/09/19,Local,Torneo Local,1,2,Marcelo Gallardo,254
+255,Gimnasia LP,28/09/19,Visitante,Torneo Local,2,0,Marcelo Gallardo,255
+256,Boca,01/10/19,Local,Libertadores,2,0,Marcelo Gallardo,256
+257,Patronato,06/10/19,Local,Torneo Local,2,0,Marcelo Gallardo,257
+258,Almagro,11/10/19,Neutral,Copa Argentina,2,0,Marcelo Gallardo,258
+259,Arsenal,18/10/19,Visitante,Torneo Local,3,3,Marcelo Gallardo,259
+260,Boca,22/10/19,Visitante,Libertadores,0,1,Marcelo Gallardo,260
+261,Colón,29/10/19,Local,Torneo Local,2,1,Marcelo Gallardo,261
+262,Aldosivi,02/11/19,Visitante,Torneo Local,2,1,Marcelo Gallardo,262
+263,Rosario Central,10/11/19,Local,Torneo Local,0,1,Marcelo Gallardo,263
+264,Estudiantes BA,14/11/19,Neutral,Copa Argentina,2,0,Marcelo Gallardo,264
+265,Flamengo,23/11/19,Neutral,Libertadores,1,2,Marcelo Gallardo,265
+266,Newell's,30/11/19,Visitante,Torneo Local,3,2,Marcelo Gallardo,266
+267,San Lorenzo,08/12/19,Local,Torneo Local,0,1,Marcelo Gallardo,267
+268,Central Córdoba,13/12/19,Neutral,Copa Argentina,3,0,Marcelo Gallardo,268
+269,Independiente,19/01/20,Visitante,Torneo Local,2,1,Marcelo Gallardo,269
+270,Godoy Cruz,25/01/20,Visitante,Torneo Local,1,0,Marcelo Gallardo,270
+271,Central Córdoba,02/02/20,Local,Torneo Local,2,0,Marcelo Gallardo,271
+272,Unión,09/02/20,Visitante,Torneo Local,2,1,Marcelo Gallardo,272
+273,Banfield,16/02/20,Local,Torneo Local,1,0,Marcelo Gallardo,273
+274,Estudiantes,23/02/20,Visitante,Torneo Local,2,0,Marcelo Gallardo,274
+275,Defensa y Justicia,29/02/20,Local,Torneo Local,1,1,Marcelo Gallardo,275
+276,Liga de Quito,04/03/20,Visitante,Libertadores,0,3,Marcelo Gallardo,276
+277,Atlético Tucumán,07/03/20,Visitante,Torneo Local,1,1,Marcelo Gallardo,277
+278,Binacional,11/03/20,Local,Libertadores,8,0,Marcelo Gallardo,278
+279,Sao Paulo,17/09/20,Visitante,Libertadores,2,2,Marcelo Gallardo,279
+280,Binacional,22/09/20,Visitante,Libertadores,6,0,Marcelo Gallardo,280
+281,Sao Paulo,30/09/20,Local,Libertadores,2,1,Marcelo Gallardo,281
+282,Liga de Quito,20/10/20,Local,Libertadores,3,0,Marcelo Gallardo,282
+283,Banfield,03/11/20,Local,Copa de la Liga,1,3,Marcelo Gallardo,283
+284,Rosario Central,07/11/20,Local,Copa de la Liga,2,1,Marcelo Gallardo,284
+285,Godoy Cruz,14/11/20,Visitante,Copa de la Liga,1,0,Marcelo Gallardo,285
+286,Banfield,20/11/20,Visitante,Copa de la Liga,2,0,Marcelo Gallardo,286
+287,Paranaense,24/11/20,Visitante,Libertadores,1,1,Marcelo Gallardo,287
+288,Rosario Central,28/11/20,Visitante,Copa de la Liga,2,0,Marcelo Gallardo,288
+289,Paranaense,01/12/20,Local,Libertadores,1,0,Marcelo Gallardo,289
+290,Godoy Cruz,05/12/20,Local,Copa de la Liga,3,1,Marcelo Gallardo,290
+291,Nacional,10/12/20,Local,Libertadores,2,0,Marcelo Gallardo,291
+292,Argentinos Jrs,13/12/20,Local,Copa de la Liga,1,1,Marcelo Gallardo,292
+293,Nacional,17/12/20,Visitante,Libertadores,6,2,Marcelo Gallardo,293
+294,Huracán,20/12/20,Visitante,Copa de la Liga,3,1,Marcelo Gallardo,294
+295,Arsenal,27/12/20,Local,Copa de la Liga,2,1,Marcelo Gallardo,295
+296,Boca,02/01/21,Visitante,Copa de la Liga,2,2,Marcelo Gallardo,296
+297,Palmeiras,05/01/21,Local,Libertadores,0,3,Marcelo Gallardo,297
+298,Independiente,09/01/21,Local,Copa de la Liga,0,2,Marcelo Gallardo,298
+299,Palmeiras,12/01/21,Visitante,Libertadores,2,0,Marcelo Gallardo,299
+300,Deportes de Pronunciamiento,10/02/21,Neutral,Copa Argentina,4,0,Marcelo Gallardo,300
+301,Estudiantes,14/02/21,Visitante,Copa de la Liga,1,2,Marcelo Gallardo,301
+302,Rosario Central,20/02/21,Local,Copa de la Liga,3,0,Marcelo Gallardo,302
+303,Platense,28/02/21,Visitante,Copa de la Liga,1,0,Marcelo Gallardo,303
+304,Racing,04/03/21,Neutral,Supercopa Argentina,5,0,Marcelo Gallardo,304
+305,Argentinos Jrs,08/03/21,Local,Copa de la Liga,0,1,Marcelo Gallardo,305
+306,Boca,14/03/21,Visitante,Copa de la Liga,1,1,Marcelo Gallardo,306
+307,Godoy Cruz,20/03/21,Visitante,Copa de la Liga,6,1,Marcelo Gallardo,307
+308,Racing,28/03/21,Local,Copa de la Liga,0,0,Marcelo Gallardo,308
+309,Arsenal,03/04/21,Visitante,Copa de la Liga,0,1,Marcelo Gallardo,309
+310,Atlético Tucumán,07/04/21,Neutral,Copa de la Liga,2,1,Marcelo Gallardo,310
+311,Colón,11/04/21,Local,Copa de la Liga,3,2,Marcelo Gallardo,311
+312,Central Córdoba,16/04/21,Visitante,Copa de la Liga,5,0,Marcelo Gallardo,312
+313,Fluminense,22/04/21,Visitante,Libertadores,1,1,Marcelo Gallardo,313
+314,San Lorenzo,25/04/21,Local,Copa de la Liga,1,2,Marcelo Gallardo,314
+315,Junior,28/04/21,Local,Libertadores,2,1,Marcelo Gallardo,315
+316,Banfield,02/05/21,Visitante,Copa de la Liga,0,1,Marcelo Gallardo,316
+317,Santa Fe,06/05/21,Visitante,Libertadores,0,0,Marcelo Gallardo,317
+318,Aldosivi,09/05/21,Local,Copa de la Liga,4,1,Marcelo Gallardo,318
+319,Junior,12/05/21,Visitante,Libertadores,1,1,Marcelo Gallardo,319
+320,Boca,16/05/21,Visitante,Copa de la Liga,1,1,Marcelo Gallardo,320
+321,Santa Fe,19/05/21,Local,Libertadores,2,1,Marcelo Gallardo,321
+322,Fluminense,25/05/21,Local,Libertadores,1,3,Marcelo Gallardo,322
+323,Argentinos Jrs,14/07/21,Local,Libertadores,1,1,Marcelo Gallardo,323
+324,Colón,18/07/21,Local,Torneo Local,1,2,Marcelo Gallardo,324
+325,Argentinos Jrs,21/07/21,Visitante,Libertadores,2,0,Marcelo Gallardo,325
+326,Unión,25/07/21,Local,Torneo Local,4,0,Marcelo Gallardo,326
+327,Lanús,28/07/21,Visitante,Torneo Local,3,0,Marcelo Gallardo,327
+328,Huracán,01/08/21,Local,Torneo Local,1,1,Marcelo Gallardo,328
+329,Boca,04/08/21,Neutral,Copa Argentina,0,0,Marcelo Gallardo,329
+330,Godoy Cruz,07/08/21,Visitante,Torneo Local,1,2,Marcelo Gallardo,330
+331,Atlético Mineiro,11/08/21,Local,Libertadores,0,1,Marcelo Gallardo,331
+332,Vélez,14/08/21,Local,Torneo Local,2,0,Marcelo Gallardo,332
+333,Atlético Mineiro,18/08/21,Visitante,Libertadores,0,3,Marcelo Gallardo,333
+334,Gimnasia LP,22/08/21,Visitante,Torneo Local,1,1,Marcelo Gallardo,334
+335,Aldosivi,26/08/21,Local,Torneo Local,2,0,Marcelo Gallardo,335
+336,Sarmiento,30/08/21,Visitante,Torneo Local,2,1,Marcelo Gallardo,336
+337,Independiente,05/09/21,Local,Torneo Local,1,1,Marcelo Gallardo,337
+338,Newell's,15/09/21,Visitante,Torneo Local,4,1,Marcelo Gallardo,338
+339,Arsenal,19/09/21,Local,Torneo Local,1,0,Marcelo Gallardo,339
+340,Central Córdoba,25/09/21,Visitante,Torneo Local,3,1,Marcelo Gallardo,340
+341,Boca,03/10/21,Local,Torneo Local,2,1,Marcelo Gallardo,341
+342,Banfield,09/10/21,Visitante,Torneo Local,1,0,Marcelo Gallardo,342
+343,San Lorenzo,17/10/21,Local,Torneo Local,3,1,Marcelo Gallardo,343
+344,Talleres,21/10/21,Visitante,Torneo Local,2,0,Marcelo Gallardo,344
+345,Argentinos Jrs,25/10/21,Local,Torneo Local,3,0,Marcelo Gallardo,345
+346,Estudiantes,31/10/21,Visitante,Torneo Local,1,1,Marcelo Gallardo,346
+347,Patronato,07/11/21,Local,Torneo Local,5,0,Marcelo Gallardo,347
+348,Platense,21/11/21,Visitante,Torneo Local,1,0,Marcelo Gallardo,348
+349,Racing,25/11/21,Local,Torneo Local,4,0,Marcelo Gallardo,349
+350,Rosario Central,28/11/21,Visitante,Torneo Local,2,2,Marcelo Gallardo,350
+351,Defensa y Justicia,05/12/21,Local,Torneo Local,2,3,Marcelo Gallardo,351
+352,Atlético Tucumán,11/12/21,Visitante,Torneo Local,1,1,Marcelo Gallardo,352
+353,Colón,18/12/21,Neutral,Trofeo De Campeones,4,0,Marcelo Gallardo,353
+354,Unión,12/02/22,Visitante,Copa de la Liga,0,1,Marcelo Gallardo,354
+355,Patronato,16/02/22,Local,Copa de la Liga,4,1,Marcelo Gallardo,355
+356,Newell's,20/02/22,Visitante,Copa de la Liga,2,0,Marcelo Gallardo,356
+357,Racing,27/02/22,Local,Copa de la Liga,2,2,Marcelo Gallardo,357
+358,San Lorenzo,05/03/22,Visitante,Copa de la Liga,1,0,Marcelo Gallardo,358
+359,Laferrere,09/03/22,Neutral,Copa Argentina,5,0,Marcelo Gallardo,359
+360,Gimnasia LP,13/03/22,Local,Copa de la Liga,4,0,Marcelo Gallardo,360
+361,Boca,20/03/22,Visitante,Copa de la Liga,0,1,Marcelo Gallardo,361
+362,Defensa y Justicia,02/04/22,Visitante,Copa de la Liga,2,1,Marcelo Gallardo,362
+363,Alianza Lima,06/04/22,Visitante,Libertadores,1,0,Marcelo Gallardo,363
+364,Argentinos Jrs,10/04/22,Local,Copa de la Liga,4,2,Marcelo Gallardo,364
+365,Fortaleza,13/04/22,Local,Libertadores,2,0,Marcelo Gallardo,365
+366,Banfield,17/04/22,Visitante,Copa de la Liga,2,1,Marcelo Gallardo,366
+367,Talleres,20/04/22,Visitante,Copa de la Liga,0,1,Marcelo Gallardo,367
+368,Atlético Tucumán,24/04/22,Local,Copa de la Liga,1,1,Marcelo Gallardo,368
+369,Colo Colo,27/04/22,Visitante,Libertadores,2,1,Marcelo Gallardo,369
+370,Sarmiento,30/04/22,Visitante,Copa de la Liga,7,0,Marcelo Gallardo,370
+371,Fortaleza,05/05/22,Visitante,Libertadores,1,1,Marcelo Gallardo,371
+372,Platense,08/05/22,Local,Copa de la Liga,2,1,Marcelo Gallardo,372
+373,Tigre,11/05/22,Local,Copa de la Liga,1,2,Marcelo Gallardo,373
+374,Colo Colo,19/05/22,Local,Libertadores,4,0,Marcelo Gallardo,374
+375,Alianza Lima,25/05/22,Local,Libertadores,8,1,Marcelo Gallardo,375
+376,Defensa y Justicia,05/06/22,Visitante,Torneo Local,0,0,Marcelo Gallardo,376
+377,Atlético Tucumán,11/06/22,Local,Torneo Local,0,0,Marcelo Gallardo,377
+378,Colón,15/06/22,Visitante,Torneo Local,0,1,Marcelo Gallardo,378
+379,Unión,19/06/22,Visitante,Torneo Local,5,1,Marcelo Gallardo,379
+380,Lanús,25/06/22,Local,Torneo Local,2,1,Marcelo Gallardo,380
+381,Vélez,29/06/22,Visitante,Libertadores,0,1,Marcelo Gallardo,381
+382,Huracán,03/07/22,Visitante,Torneo Local,2,3,Marcelo Gallardo,382
+383,Vélez,06/07/22,Local,Libertadores,0,0,Marcelo Gallardo,383
+384,Godoy Cruz,10/07/22,Local,Torneo Local,0,2,Marcelo Gallardo,384
+385,Barracas Central,13/07/22,Neutral,Copa Argentina,3,0,Marcelo Gallardo,385
+386,Vélez,17/07/22,Visitante,Torneo Local,2,2,Marcelo Gallardo,386
+387,Gimnasia LP,21/07/22,Local,Torneo Local,1,0,Marcelo Gallardo,387
+388,Aldosivi,24/07/22,Visitante,Torneo Local,3,0,Marcelo Gallardo,388
+389,Sarmiento,31/07/22,Local,Torneo Local,1,2,Marcelo Gallardo,389
+390,Independiente,07/08/22,Visitante,Torneo Local,1,0,Marcelo Gallardo,390
+391,Newell's,13/08/22,Local,Torneo Local,4,1,Marcelo Gallardo,391
+392,Arsenal,17/08/22,Visitante,Torneo Local,0,0,Marcelo Gallardo,392
+393,Central Córdoba,21/08/22,Local,Torneo Local,3,0,Marcelo Gallardo,393
+394,Tigre,27/08/22,Visitante,Torneo Local,1,1,Marcelo Gallardo,394
+395,Defensa y Justicia,31/08/22,Neutral,Copa Argentina,4,0,Marcelo Gallardo,395
+396,Barracas Central,04/09/22,Local,Torneo Local,2,0,Marcelo Gallardo,396
+397,Boca,11/09/22,Visitante,Torneo Local,0,1,Marcelo Gallardo,397
+398,Banfield,14/09/22,Local,Torneo Local,1,2,Marcelo Gallardo,398
+399,San Lorenzo,18/09/22,Visitante,Torneo Local,1,0,Marcelo Gallardo,399
+400,Talleres,24/09/22,Local,Torneo Local,0,1,Marcelo Gallardo,400
+401,Patronato,28/09/22,Neutral,Copa Argentina,2,2,Marcelo Gallardo,401
+402,Argentinos Jrs,02/10/22,Visitante,Torneo Local,3,0,Marcelo Gallardo,402
+403,Estudiantes,06/10/22,Local,Torneo Local,5,0,Marcelo Gallardo,403
+404,Patronato,09/10/22,Visitante,Torneo Local,1,0,Marcelo Gallardo,404
+405,Platense,12/10/22,Local,Torneo Local,2,1,Marcelo Gallardo,405
+406,Rosario Central,16/10/22,Local,Torneo Local,1,2,Marcelo Gallardo,406
+407,Racing,23/10/22,Visitante,Torneo Local,2,1,Marcelo Gallardo,407
+408,Central Córdoba,28/01/23,Visitante,Torneo Local,2,0,Martín Demichelis,408
+409,Belgrano,04/02/23,Visitante,Torneo Local,1,2,Martín Demichelis,409
+410,Argentinos Jrs,12/02/23,Local,Torneo Local,2,1,Martín Demichelis,410
+411,Tigre,18/02/23,Visitante,Torneo Local,1,0,Martín Demichelis,411
+412,Banfield,22/02/23,Neutral,Trofeo de Campeones,3,2,Martín Demichelis,412
+413,Arsenal,26/02/23,Local,Torneo Local,1,2,Martín Demichelis,413
+414,Lanús,04/03/23,Visitante,Torneo Local,2,0,Martín Demichelis,414
+415,Racing de Córdoba,08/03/23,Neutral,Copa Argentina,3,0,Martín Demichelis,415
+416,Godoy Cruz,12/03/23,Local,Torneo Local,3,0,Martín Demichelis,416
+417,Sarmiento,19/03/23,Visitante,Torneo Local,2,0,Martín Demichelis,417
+418,Unión,31/03/23,Local,Torneo Local,1,0,Martín Demichelis,418
+419,The Strongest,04/04/23,Visitante,Libertadores,1,3,Martín Demichelis,419
+420,Huracán,09/04/23,Visitante,Torneo Local,3,0,Martín Demichelis,420
+421,Gimnasia LP,13/04/23,Local,Torneo Local,3,0,Martín Demichelis,421
+422,Newell's,16/04/23,Visitante,Torneo Local,1,0,Martín Demichelis,422
+423,Sporting Cristal,19/04/23,Local,Libertadores,4,2,Martín Demichelis,423
+424,Independiente,23/04/23,Local,Torneo Local,2,0,Martín Demichelis,424
+425,Atlético Tucumán,28/04/23,Visitante,Torneo Local,1,1,Martín Demichelis,425
+426,Fluminense,02/05/23,Visitante,Libertadores,1,5,Martín Demichelis,426
+427,Boca,07/05/23,Local,Torneo Local,1,0,Martín Demichelis,427
+428,Talleres,14/05/23,Visitante,Torneo Local,1,2,Martín Demichelis,428
+429,Platense,21/05/23,Local,Torneo Local,2,1,Martín Demichelis,429
+430,Sporting Cristal,25/05/23,Visitante,Libertadores,1,1,Martín Demichelis,430
+431,Vélez,29/05/23,Visitante,Torneo Local,2,2,Martín Demichelis,431
+432,Defensa y Justicia,03/06/23,Local,Torneo Local,1,0,Martín Demichelis 432
+433,Fluminense,07/06/23,Local,Libertadores,2,0,Martín Demichelis,433
+434,Banfield,12/06/23,Visitante,Torneo Local,4,1,Martín Demichelis,434
+435,Instituto,22/06/23,Local,Torneo Local,3,1,Martín Demichelis,435
+436,The Strongest,27/06/23,Local,Libertadores,2,0,Martín Demichelis,436
+437,Barracas Central,01/07/23,Visitante,Torneo Local,1,2,Martín Demichelis,437
+438,Colón,05/07/23,Local,Torneo Local,2,0,Martín Demichelis,438
+439,San Lorenzo,08/07/23,Visitante,Torneo Local,0,0,Martín Demichelis,439
+440,Estudiantes,15/07/23,Local,Torneo Local,3,1,Martín Demichelis,440
+441,Talleres,20/07/23,Neutral,Copa Argentina,0,1,Martín Demichelis,441
+442,Rosario Central,23/07/23,Visitante,Torneo Local,3,3,Martín Demichelis,442
+443,Racing,28/07/23,Local,Torneo Local,2,1,Martín Demichelis,443
+444,Internacional,01/08/23,Local,Libertadores,2,1,Martín Demichelis,444
+445,Internacional,08/08/23,Visitante,Libertadores,1,2,Martín Demichelis,445
+446,Argentinos Jrs,20/08/23,Visitante,Torneo Local,2,3,Martín Demichelis,446
+447,Barracas Central,27/08/23,Local,Torneo Local,5,1,Martín Demichelis,447
+448,Vélez,02/09/23,Visitante,Torneo Local,0,2,Martín Demichelis,448

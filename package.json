@@ -1,0 +1,30 @@
+{
+  "name": "goles-de-river",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^6",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.108.12",
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-goles-de-river": "cds watch --open goles-de-river/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-goles_de_river": "cds watch --open goles_de_river/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-goles.de.river": "cds watch --open goles.de.river/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-project2": "cds watch --open project2/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/goles-de-river",
+    "app/goles.de.river",
+    "app/goles-de-river",
+    "app/project2"
+  ]
+}

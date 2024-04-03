@@ -1,0 +1,110 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="project1.controller.GolView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+    <Page id="page" title="River Plate {partido/golesAFavor} - {partido/golesRecibidos} {partido/equipo/ID}" showNavButton="true" navButtonPress=".home">
+        <content>
+                <FlexBox height="50px" alignItems="Center" justifyContent="Center">
+                    <Button id="prev" class="sapUiSmallMargin" icon="sap-icon://navigation-left-arrow" press=".navigation"/>
+                    <Text id="main" text="{ID}"/>
+                    <Button id="next" class="sapUiSmallMargin" icon="sap-icon://navigation-right-arrow" press=".navigation"/>
+                </FlexBox>
+                <Panel id="panel_video">
+                <content>
+                    <html:iframe width="840" height="473" src="https://www.youtube.com/embed/{partido/video/youtube}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="vid" class="vid" allowfullscreen="1"></html:iframe>
+                </content>
+                </Panel>
+                <Panel id="golDetails" headerText="Información del gol" class="sapUiResponsiveMargin" width="auto">
+                    <form:SimpleForm editable="true" layout="ColumnLayout" width="90vw" columnsXL="6" columnsL="3" columnsM="2" emptySpanXL="2" emptySpanL="2" emptySpanM="2" emptySpanS="2">
+
+                        <Label text="ID"/>
+                        <Text id="golID" text="{ID}"/>
+
+                        <Label text="N° de gol en ciclo"/>
+                        <Text id="numeroCiclo" text="{numeroCiclo}"/>
+
+                        <Label text="Autor"/>
+                        <Text id="autor" text="{autor/ID}"/>
+
+                        <Label text="Nacionalidad del autor"/>
+                        <Text id="nacionalidadAutor" text="{autor/nacionalidad}"/>
+
+                        <Label text="Minuto"/>
+                        <Text id="minuto" text="{minuto}"/>
+
+                        <Label text="Forma"/>
+                        <Text id="forma" text="{forma/ID}"/>
+
+                        <Label text="¿Fue en contra?"/>
+                        <Text id="enContra" text="{enContra}"/>
+
+                        <Label text="N° de gol del jugador en el ciclo"/>
+                        <Text id="nroEnCiclo" text="{nroEnCiclo}"/>
+
+                        <Label text="N° de gol del jugador en el club"/>
+                        <Text id="nroPersonal" text="{nroPersonal}"/>
+
+                        <Label text="Asistente"/>
+                        <Text id="asistente" text="{asistente/ID}"/>
+
+                        <Label text="Nacionalidad del asistente"/>
+                        <Text id="nacionalidadAsistente" text="{asistente/nacionalidad}"/>
+
+                        <Label text="Asistencia del jugador en el ciclo"/>
+                        <Text id="numeroAsistenciaEnCiclo" text="{numeroAsistenciaEnCiclo}"/>
+
+                        <Label text="Asistencia del jugador en el club"/>
+                        <Text id="numeroAsistencia" text="{numeroAsistencia}"/>
+
+                    </form:SimpleForm>
+                </Panel>
+                
+                <Panel id="matchDetails" headerText="Información del partido" class="sapUiResponsiveMargin" width="auto">
+                    <form:SimpleForm editable="true" layout="ColumnLayout" width="90vw" columnsXL="6" columnsL="3" columnsM="2" emptySpanXL="2" emptySpanL="2" emptySpanM="2" emptySpanS="2">
+
+                        <Label text="ID"/>
+                        <Text id="partidoID" text="{partido/ID}"/>
+
+                        <Label text="Equipo rival"/>
+                        <Text id="rival" text="{partido/equipo/ID}"/>
+                        
+                        <Label text="País del equipo"/>
+                        <Text id="paisRival" text="{partido/equipo/pais}"/>
+                        
+                        <Label text="Fecha"/>
+                        <Text id="fecha" text="{partido/fecha}"/>
+                        
+                        <Label text="Condición"/>
+                        <Text id="condicion" text="{partido/condicion/ID}"/>
+                        
+                        <Label text="Goles a favor"/>
+                        <Text id="golesAFavor" text="{partido/golesAFavor}"/>
+                        
+                        <Label text="Goles recibidos"/>
+                        <Text id="golesRecibidos" text="{partido/golesRecibidos}"/>
+                        
+                        <Label text="DT"/>
+                        <Text id="dtID" text="{partido/dt/ID}"/>
+                        
+                        <Label text="Nacionalidad DT"/>
+                        <Text id="nacionalidadDT" text="{partido/dt/nacionalidad}"/>
+                        
+                    </form:SimpleForm>
+                </Panel>
+                <Panel id="tournament" headerText="Información de la competencia" class="sapUiResponsiveMargin" width="auto">
+                    <form:SimpleForm editable="true" layout="ColumnLayout" width="90vw" columnsXL="6" columnsL="3" columnsM="2" emptySpanXL="2" emptySpanL="2" emptySpanM="2" emptySpanS="2">
+
+                        <Label text="Competencia"/>
+                        <Text id="competenciaID" text="{partido/competencia/ID}"/>
+
+                        <Label text="Jerarquía"/>
+                        <Text id="jerarquia" text="{partido/competencia/jerarquia}"/>
+
+                        <Label text="Entidad organizadora"/>
+                        <Text id="organizador" text="{partido/competencia/organizador}"/>
+                        
+                    </form:SimpleForm>
+                </Panel>
+        </content>
+    </Page>
+</mvc:View>
